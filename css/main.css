@@ -1,0 +1,146 @@
+/*
+ *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+ *
+ *  Use of this source code is governed by a BSD-style license
+ *  that can be found in the LICENSE file in the root of the source
+ *  tree.
+ */
+ button {
+  margin: 0 3px 10px 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 99px;
+}
+
+button:last-of-type {
+  margin: 0;
+}
+
+p.borderBelow {
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+
+video {
+  height: 232px;
+  margin: 0 12px 20px 0;
+  vertical-align: top;
+  width: calc(20em - 10px);
+}
+
+
+video:last-of-type {
+  margin: 0 0 20px 0;
+}
+
+video#gumVideo {
+  margin: 0 20px 20px 0;
+}
+
+@media screen and (max-width: 500px) {
+  button {
+    font-size: 0.8em;
+    width: calc(33% - 5px);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  video {
+    height: calc((50vw - 48px) * 3 / 4);
+    margin: 0 10px 10px 0;
+    width: calc(50vw - 48px);
+  }
+
+  video#gumVideo {
+    margin: 0 10px 10px 0;
+  }
+}
+#container {
+//width: 600px;
+//height: 1200px;
+//max-width: 50%;
+//height: 1000px;
+//margin-left: auto;
+//margin-right: auto;
+//background-image: url('../Rahmen2.jpg');
+//background-size: contain;
+//padding: 50px;
+//background-repeat: no-repeat;
+}
+#recorded {
+display: none;
+}
+
+#counter {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.headline {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.content {
+
+}
+
+.modul {
+width: 310px;
+height: 500px;
+border: 1px solid black;
+background-color: grey;
+padding: 30px;
+margin: 20px;
+float: left;
+//display: inline-block;
+background-image: url('../Rahmen2.jpg');
+background-size: 370px 560px;
+background-repeat: no-repeat;
+
+}
+
+#modul-container {
+width: calc(100% - 10px);
+max-width: 1250px;
+//width: 1300px;
+height: calc(100% - 54px);
+//position: absolute;
+//top: 54px;
+//left: 20px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#gum, #recorded {
+width: 100%;
+
+}
+
+
+#login {
+background-color: white;
+border: black solid  1px;
+text-align: center;
+width: 300px;
+height: 300px;
+padding: 20px;
+position: absolute;
+top: 10px;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+}
+
+#loader {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+width: 200px;
+height: 200px;
+}
