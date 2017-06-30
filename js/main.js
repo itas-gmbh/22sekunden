@@ -167,32 +167,32 @@ function play() {
 }
 
 function closet() {
-$('#login').hide();
-$('#modul-container').fadeIn('slow');
+jquery('#login').hide();
+jquery('#modul-container').fadeIn('slow');
 }
 
 
 function open() {
-$('#login').fadeIn('slow');
-$('#modul-container').hide();
+jquery('#login').fadeIn('slow');
+jquery('#modul-container').hide();
 }
 
 function showloader(){
-$('#loader').fadeIn('slow');
-$('#modul-container').hide();
+jquery('#loader').fadeIn('slow');
+jquery('#modul-container').hide();
 }
 
 function hideloader(){
-$('#loader').hide();
-$('#modul-container').fadeIn('slow');
+jquery('#loader').hide();
+jquery('#modul-container').fadeIn('slow');
 }
 
 function login() {
     showloader();
     closet();
-    var user = $('#user').val();
-    var pass = $('#pass').val();
-    $.ajax('https://22sekunden.at/wp-content/plugins/22sek-video/record/login.php', {
+    var user = jquery('#user').val();
+    var pass = jquery('#pass').val();
+    jquery.ajax('https://22sekunden.at/wp-content/plugins/22sek-video/record/login.php', {
         		method: "POST",
         		data: "user=" + user + "&pass=" + pass,
         		success: function (data) {
@@ -229,8 +229,8 @@ function download() {
 		data.append('file', blob);
     		//data.append('croppedImage', blob);
     		//data.append('form_key', window.FORM_KEY);
-		$('#loader').show();
-		$.ajax('https://22sekunden.at/wp-content/plugins/22sek-video/record/upload.php', {
+		jquery('#loader').show();
+		jquery.ajax('https://22sekunden.at/wp-content/plugins/22sek-video/record/upload.php', {
         		method: "POST",
         		data: data,
         		processData: false,
